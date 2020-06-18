@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: 'Roboto';
+}
+
+.mainpage {
+    background: rgb(49, 0, 80);
+    background: linear-gradient(41deg, rgb(53, 1, 197) 0%, rgb(107, 87, 161) 100%);
+    height: 170vh;
+    width: 100%;
+    border-radius: 0 0 30% 30%;
+    border: inset rgb(179, 179, 179) solid 1px;
+    box-shadow: 4px 2px 7px rgb(148, 148, 148);
+}
+
+.square1 {
+    height: 100px;
+    width: 100px;
+    border: darkgray 2px solid;
+    position: absolute;
+    left: 10%;
+    top: 200px;
+    transform: rotate(110deg);
+}
+
+.square2 {
+    height: 50px;
+    width: 50px;
+    border: darkgray 2px solid;
+    position: absolute;
+    left: 45%;
+    top: 430px;
+    transform: rotate(20deg);
+}
+
+.square3 {
+    height: 150px;
+    width: 150px;
+    border: darkgray 2px solid;
+    position: absolute;
+    left: 35%;
+    top: 70px;
+    transform: rotate(70deg);
+}
+
+.square4 {
+    height: 450px;
+    width: 500px;
+    background-color: salmon;
+    position: absolute;
+    left: 59%;
+    top: 180px;
+    border-radius: 20px;
+}
+
+.navbar {
+    height: 15vh;
+    width: 100%;
+    display: flex;
+    background-color: transparent;
+    padding-top: 20px;
+}
+
+.navbar>h3 {
+    text-align: left;
+    color: white;
+    padding-left: 20px;
+}
+
+.navbar>ul {
+    list-style: none;
+    display: flex;
+    position: relative;
+    left: 40%;
+}
+
+.navbar>ul>a {
+    text-decoration: none;
+}
+
+.navbar>ul>a>li {
+    color: rgb(216, 213, 213);
+    margin: 0 30px;
+    transition: .3s;
+    font-weight: 300;
+}
+
+.navbar>ul>a>li:hover {
+    margin-top: -4px;
+}
+
+.navbar>button {
+    position: relative;
+    left: 43%;
+    bottom: 13px;
+    height: 50px;
+    width: 150px;
+    border-radius: 30px;
+    transition: .3s;
+    border: none;
+    background-color: white;
+}
+
+.navbar>button:hover {
+    background-color: rgb(46, 45, 45);
+    color: white;
+    cursor: pointer;
+}
+
+.herotext {
+    position: relative;
+    left: 19%;
+    top: 10%;
+    line-height: 50px;
+    width: 30%;
+    color: white;
+}
+
+.herotext>h2 {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: rgb(211, 211, 211);
+}
+
+.herotext>h1 {
+    font-size: 45px;
+    font-weight: 500;
+}
+
+.herotext>h3 {
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 30px;
+    margin-bottom: 40px;
+}
+
+.herotext>button {
+    height: 50px;
+    width: 200px;
+    background-color: salmon;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    transition: .3s;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.herotext>button:hover {
+    background-color: white;
+    color: salmon;
+    cursor: pointer;
+
+}
+
+.heropic {
+    position: absolute;
+    left: 55%;
+    top: 150px;
+    height: 450px;
+    width: 520px;
+    border-radius: 20px;
+}
+
+.content1 {
+    height: 50vh;
+    width: 100%;
+    position: relative;
+    top: 20%;
+
+}
+
+.content1>h1 {
+    text-align: left;
+    color: white;
+    font-weight: 400;
+    margin-bottom: 50px;
+    margin-left: 65px;
+    font-size: 48px;
+}
+
+
+.content1>.spots {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.content1>.spots>.spot {
+    width: 25%;
+    line-height: 50px;
+    border-bottom: salmon 3px solid;
+}
+
+.spot>h1 {
+    color: slategray;
+    font-size: 50px;
+    font-weight: 200;
+    opacity: .8;
+}
+
+.spot>h2 {
+    line-height: 35px;
+    color: white;
+    font-weight: 300;
+}
+
+.spot>p {
+    line-height: 35px;
+    color: rgb(201, 201, 201);
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10%;
+}
+
+.cards>.card {
+    width: 15%;
+    height: 300px;
+    line-height: 40px;
+    border: inset rgb(179, 179, 179) solid 1px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 7px rgb(148, 148, 148);
+    padding: 20px;
+    text-align: center;
+    transition: .3s;
+}
+
+.card:hover {
+    margin-top: -7px;
+}
+
+.card>h2 {
+    font-size: 25px;
+    margin-top: 30px;
+
+}
+
+.card>p {
+    line-height: 29px;
+    font-size: 15px;
+    margin-top: 30px;
+}
+
+
+.filler {
+    height: 40vh;
+    width: 100%;
+}
+
+
+.filler2 {}
+
+.filler3 {}
+
+
+footer {
+    height: 30vh;
+    width: 100%;
+    background-color: darkgrey;
+}
