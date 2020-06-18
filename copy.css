@@ -12,7 +12,8 @@
     width: 100%;
     border-radius: 0 0 30% 30%;
     border: inset rgb(179, 179, 179) solid 1px;
-    box-shadow: 4px 2px 7px rgb(148, 148, 148);
+    box-shadow: 4px 2px 7px rgb(148, 148, 148), -4px -2px 7px rgb(148, 148, 148);
+
 }
 
 .square1 {
@@ -95,12 +96,14 @@
     position: relative;
     left: 43%;
     bottom: 13px;
-    height: 50px;
-    width: 150px;
+    height: 40px;
+    width: 120px;
     border-radius: 30px;
     transition: .3s;
     border: none;
     background-color: white;
+    font-weight: bold;
+    margin-top: 5px;
 }
 
 .navbar>button:hover {
@@ -146,7 +149,7 @@
     border-radius: 50px;
     transition: .3s;
     font-size: 20px;
-    font-weight: 200;
+    font-weight: bold;
 }
 
 .herotext>button:hover {
@@ -193,19 +196,25 @@
     width: 25%;
     line-height: 50px;
     border-bottom: salmon 3px solid;
+    /* position: relative;
+    z-index: 8; */
 }
 
 .spot>h1 {
-    color: slategray;
-    font-size: 50px;
-    font-weight: 200;
-    opacity: .8;
+    color: rgb(146, 146, 146);
+    font-size: 70px;
+    font-weight: 400;
+    /* position: absolute;
+    top: 0;
+    z-index: 5; */
 }
 
 .spot>h2 {
     line-height: 35px;
     color: white;
     font-weight: 300;
+    margin-top: 20px;
+    z-index: 10;
 }
 
 .spot>p {
@@ -249,15 +258,425 @@
 
 
 .filler {
-    height: 40vh;
+    height: 70vh;
     width: 100%;
+    display: flex;
+    flex-basis: 100%;
+    justify-content: space-around;
+    margin: 130px 0;
+    position: relative;
+}
+
+.filler1>.grey {
+    position: absolute;
+    left: 17%;
+    height: 400px;
+    width: 400px;
+    background-color: gray;
+    border-radius: 20px;
+}
+
+.filler1>img {
+    height: 400px;
+    width: 400px;
+    position: relative;
+    left: 0;
+    top: 10%;
+    border-radius: 20px;
+}
+
+.filler1>.info {
+    height: 40vh;
+    width: 22%;
+    position: relative;
+    right: 10%;
+    top: 15%;
+    line-height: 30px;
+}
+
+.filler1>.info>h1 {
+    margin-bottom: 30px;
+    font-size: 35px;
+    line-height: 44px;
+}
+
+.filler1>.info>p {
+    font-size: 14px;
+    color: grey;
 }
 
 
-.filler2 {}
+.filler2>.grey2 {
+    height: 350px;
+    width: 800px;
+    position: absolute;
+    right: 10px;
+    top: 80px;
+    background-color: rgb(238, 238, 238);
+    border-radius: 20px;
+}
 
-.filler3 {}
+.filler2>img {
+    height: 400px;
+    width: 400px;
+    position: relative;
+    left: 40%;
+    top: 10%;
+    border-radius: 20px;
+}
 
+.filler2>.info {
+    height: 40vh;
+    width: 22%;
+    position: relative;
+    right: 50%;
+    top: 30%;
+    line-height: 30px;
+}
+
+.filler2>.info>h1 {
+    margin-bottom: 30px;
+    font-size: 35px;
+    line-height: 44px;
+}
+
+.filler2>.info>p {
+    font-size: 14px;
+    color: grey;
+}
+
+.filler3>.grey3 {
+    height: 550px;
+    width: 700px;
+    position: absolute;
+    left: 0;
+    top: 25%;
+    border-radius: 20px;
+    background-color: rgb(238, 238, 238);
+}
+
+.filler3>img {
+    height: 400px;
+    width: 500px;
+    position: relative;
+    left: 40%;
+    top: 35%;
+    border-radius: 20px;
+}
+
+.filler3>.info {
+    height: 40vh;
+    width: 22%;
+    position: relative;
+    right: 50%;
+    line-height: 30px;
+    text-align: left;
+}
+
+.filler3>.info>h1 {
+    margin-bottom: 30px;
+    font-size: 35px;
+    line-height: 44px;
+}
+
+.filler3>.info>p {
+    font-size: 13px;
+    color: rgb(0, 0, 0);
+}
+
+.features {
+    justify-content: space-around;
+}
+
+.features>.indepth {
+    line-height: 24px;
+}
+
+.indepth>h4 {
+    margin-bottom: 5px;
+}
+
+.indepth>p {
+    color: rgb(146, 146, 146);
+    margin-bottom: 10px;
+    margin-left: 45px;
+}
+
+h4>i {
+    font-size: 25px;
+    padding: 10px;
+    background-color: white;
+    color: rgb(88, 35, 88);
+    margin-bottom: 8px;
+    margin-right: 10px;
+    border-radius: 4px;
+}
+
+.chooseplan {
+    height: 30vh;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    margin-top: 100px;
+}
+
+.chooseplan>div {
+    width: 47%;
+    position: absolute;
+    left: 25%;
+}
+
+.chooseplan>div>h1 {
+    margin-bottom: 34px;
+    color: rgb(85, 56, 95);
+    font-size: 40px;
+}
+
+.chooseplan>div>p {
+    line-height: 30px;
+    color: rgb(88, 54, 99);
+    font-weight: 500;
+}
+
+.plans {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.planlol {
+    height: 60vh;
+    margin: 0 20px;
+    line-height: 40px;
+    width: 17%;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 12px 5px 16px rgb(202, 202, 202), -1px -1px 8px rgb(216, 216, 216);
+    transition: .4s;
+}
+
+.planlol:hover {
+    margin-top: -5px;
+}
+
+.planlol>h3 {
+    margin: 30px 10px;
+    color: rgb(43, 28, 48);
+}
+
+.planlol>h1 {
+    color: royalblue;
+    margin-bottom: 25px;
+}
+
+.planlol>ul {
+    list-style: none;
+    margin-right: 20px;
+    line-height: 30px;
+}
+
+.planlol>ul>li {
+
+    font-weight: bold;
+}
+
+
+
+li>i {
+    font-size: 10px;
+    position: relative;
+    bottom: 3px;
+    right: 17px;
+}
+
+.planlol>ul>p {
+    margin-left: 20px;
+}
+
+.planlol>button {
+    height: 40px;
+    width: 120px;
+    margin-top: 30px;
+    border-radius: 7px;
+    transition: .3s;
+    font-weight: bold;
+}
+
+.button1 {
+    background-color: white;
+    border: rebeccapurple solid 1px;
+    color: rebeccapurple;
+}
+
+.button1:hover {
+    background: rebeccapurple;
+    color: white;
+    cursor: pointer;
+}
+
+.button2 {
+    background-color: rgb(235, 118, 177);
+    color: white;
+    border: none;
+}
+
+.button2:hover {
+    background-color: white;
+    color: rgb(235, 118, 177);
+    border: rgb(235, 118, 177) 1px solid;
+    cursor: pointer;
+}
+
+.button3 {
+    background-color: white;
+    border: rebeccapurple solid 1px;
+    color: rebeccapurple;
+}
+
+.button3:hover {
+    background: rebeccapurple;
+    color: white;
+    cursor: pointer;
+}
+
+.test {
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(245, 245, 245);
+    text-align: center;
+}
+
+.testheader {
+    line-height: 40px;
+    padding-top: 40px;
+}
+
+.testheader>h1 {
+    position: relative;
+    right: 20%;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.testheader>p {
+    position: relative;
+    right: 15%;
+    color: rgb(88, 35, 88);
+}
+
+.testimonialpictures {
+    display: flex;
+    margin-top: 100px;
+    justify-content: center;
+
+}
+
+.testimonialpictures>.testcard {
+    width: 25%;
+    height: 30vh;
+    margin: 30px 40px;
+    position: relative;
+    line-height: 30px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: -4px -4px 12px rgb(236, 236, 236), 3px 3px 7px rgb(133, 130, 130);
+    transition: .4s;
+}
+
+.testcard:hover {
+    margin-top: -1px;
+}
+
+.testcard>img {
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    left: 10%;
+}
+
+.testcard>h2 {
+    margin-bottom: 10px;
+    position: relative;
+    right: 5px;
+}
+
+.testcard>ul {
+    list-style: none;
+    display: flex;
+    position: relative;
+    left: 35%;
+    width: 30%;
+}
+
+.testcard>ul>li>i {
+    font-size: 15px;
+    color: rgb(235, 118, 177);
+}
+
+.testcard>p {
+    position: relative;
+    line-height: 25px;
+    top: 30%;
+}
+
+.team {
+    padding-top: 10px;
+    height: 20vh;
+    text-align: center;
+    line-height: 40px;
+    background-color: rgb(245, 245, 245);
+}
+
+.team>h1 {
+    font-size: 35px;
+}
+
+.profilepic {
+    height: 70vh;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(245, 245, 245);
+}
+
+.profilepic>.container {
+    height: 58vh;
+    width: 300px;
+    position: relative;
+    left: 40%;
+    background-color: rgb(255, 255, 255);
+    padding-top: 30px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.container>img {
+    height: 35vh;
+    width: 270px;
+
+}
+
+.container>ul {
+    list-style: none;
+    display: flex;
+    text-align: center;
+    margin: 0px 39px;
+}
+
+.container>ul>a {
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.container>ul>a>li>i {
+    margin: 0px 20px;
+    text-decoration: inherit;
+    font-size: 25px;
+    color: black;
+}
 
 footer {
     height: 30vh;
