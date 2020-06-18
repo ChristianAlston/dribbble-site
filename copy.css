@@ -16,6 +16,8 @@
 
 }
 
+
+
 .square1 {
     height: 100px;
     width: 100px;
@@ -27,13 +29,13 @@
 }
 
 .square2 {
-    height: 50px;
-    width: 50px;
+    height: 70px;
+    width: 70px;
     border: darkgray 2px solid;
     position: absolute;
     left: 45%;
     top: 430px;
-    transform: rotate(20deg);
+    transform: rotate(10deg);
 }
 
 .square3 {
@@ -43,13 +45,35 @@
     position: absolute;
     left: 35%;
     top: 70px;
-    transform: rotate(70deg);
+    transform: rotate(-20deg);
 }
 
 .square4 {
+    height: 40px;
+    width: 40px;
+    border: darkgray 2px solid;
+    position: absolute;
+    left: 5%;
+    top: 450px;
+    transform: rotate(-30deg);
+}
+
+.square5 {
+    height: 120px;
+    width: 120px;
+    border: darkgray 2px solid;
+    position: absolute;
+    left: 25%;
+    top: 570px;
+    transform: rotate(-30deg);
+}
+
+
+
+.pinkblock {
     height: 450px;
     width: 500px;
-    background-color: salmon;
+    background-color: rgb(235, 118, 177);
     position: absolute;
     left: 59%;
     top: 180px;
@@ -143,7 +167,7 @@
 .herotext>button {
     height: 50px;
     width: 200px;
-    background-color: salmon;
+    background-color: rgb(235, 118, 177);
     color: white;
     border: none;
     border-radius: 50px;
@@ -154,7 +178,7 @@
 
 .herotext>button:hover {
     background-color: white;
-    color: salmon;
+    color: rgb(235, 118, 177);
     cursor: pointer;
 
 }
@@ -271,14 +295,14 @@
     position: absolute;
     left: 17%;
     height: 400px;
-    width: 400px;
-    background-color: gray;
+    width: 500px;
+    background-color: rgb(238, 238, 238);
     border-radius: 20px;
 }
 
 .filler1>img {
     height: 400px;
-    width: 400px;
+    width: 500px;
     position: relative;
     left: 0;
     top: 10%;
@@ -318,7 +342,7 @@
 
 .filler2>img {
     height: 400px;
-    width: 400px;
+    width: 500px;
     position: relative;
     left: 40%;
     top: 10%;
@@ -633,6 +657,7 @@ li>i {
 
 .team>h1 {
     font-size: 35px;
+    font-weight: 300;
 }
 
 .profilepic {
@@ -651,12 +676,19 @@ li>i {
     padding-top: 30px;
     text-align: center;
     line-height: 40px;
+    box-shadow: -2px -2px 3px rgb(238, 237, 237), 2px 2px 3px rgb(138, 138, 138);
+    border-radius: 10px;
 }
 
 .container>img {
     height: 35vh;
     width: 270px;
 
+}
+
+.container>p {
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
 .container>ul {
@@ -672,14 +704,108 @@ li>i {
 }
 
 .container>ul>a>li>i {
-    margin: 0px 20px;
+    margin: 0px 10px;
     text-decoration: inherit;
     font-size: 25px;
     color: black;
+    background-color: rgb(241, 241, 241);
+    border-radius: 50%;
+    box-shadow: -2px -2px 3px rgb(248, 248, 248), 2px 2px 3px rgb(138, 138, 138);
+    padding: 11px;
 }
 
 footer {
-    height: 30vh;
+    height: 90vh;
     width: 100%;
-    background-color: darkgrey;
+    background-color: #0a2147;
+    position: relative;
+}
+
+footer>.download {
+    position: relative;
+    left: 30%;
+    top: 15%;
+    width: 38%;
+    text-align: center;
+}
+
+.download>h1 {
+    color: white;
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+.download>p {
+    color: rgb(156, 156, 156);
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+
+.download>button {
+    height: 70px;
+    width: 200px;
+    padding: 10px;
+    font-weight: bold;
+    border: none;
+    margin: 0 20px;
+    font-size: 19px;
+    color: white;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+.download>.downloadbutton1 {
+    background-color: rgb(235, 118, 177);
+}
+
+.download>.downloadbutton1:hover {
+    background-color: white;
+    color: rgb(235, 118, 177);
+    cursor: pointer;
+}
+
+.download>.downloadbutton2 {
+    background-color: rgb(107, 45, 187);
+}
+
+.download>.downloadbutton2:hover {
+    background-color: white;
+    color: rgb(107, 45, 187);
+    cursor: pointer;
+}
+
+footer>.footermenu {
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+    height: 35vh;
+    width: 60%;
+    padding-top: 50px;
+    border-top: rgb(92, 125, 168) 1px solid;
+}
+
+.footermenu>h3 {
+    color: rgb(202, 202, 202);
+    font-weight: 300;
+    font-size: 15px;
+    width: 240px;
+    position: relative;
+    top: 7%;
+}
+
+.footermenu>ul {
+    display: flex;
+    list-style: none;
+    float: right;
+}
+
+.footermenu>ul>a {
+    margin: 0px 30px;
+    text-decoration: none;
+    color: rgb(201, 201, 201);
+    transition: .4s;
+}
+
+.footermenu>ul>a:hover {
+    text-decoration: underline white;
 }
