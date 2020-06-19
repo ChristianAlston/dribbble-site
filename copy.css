@@ -660,6 +660,10 @@ li>i {
     font-weight: 300;
 }
 
+.team>p {
+    font-weight: bold;
+}
+
 .profilepic {
     height: 70vh;
     width: 100%;
@@ -676,9 +680,11 @@ li>i {
     padding-top: 30px;
     text-align: center;
     line-height: 40px;
-    box-shadow: -2px -2px 3px rgb(238, 237, 237), 2px 2px 3px rgb(138, 138, 138);
+    box-shadow: -12px -12px 13px rgb(238, 237, 237), 2px 2px 3px rgb(138, 138, 138);
     border-radius: 10px;
+
 }
+
 
 .container>img {
     height: 35vh;
@@ -689,6 +695,7 @@ li>i {
 .container>p {
     font-weight: bold;
     margin-bottom: 10px;
+    color: rgb(119, 117, 119);
 }
 
 .container>ul {
@@ -707,12 +714,15 @@ li>i {
     margin: 0px 10px;
     text-decoration: inherit;
     font-size: 25px;
-    color: black;
+    color: rgb(150, 15, 150);
     background-color: rgb(241, 241, 241);
     border-radius: 50%;
     box-shadow: -2px -2px 3px rgb(248, 248, 248), 2px 2px 3px rgb(138, 138, 138);
     padding: 11px;
+
 }
+
+
 
 footer {
     height: 90vh;
